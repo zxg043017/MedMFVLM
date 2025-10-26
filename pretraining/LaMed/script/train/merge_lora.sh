@@ -1,0 +1,11 @@
+python merge_lora_weights_and_save_hf_model.py \
+    --version v0 \
+    --model_name_or_path microsoft/Phi-3.5-mini-instruct \
+    --model_type phi3 \
+    --lora_enable True \
+    --vision_tower swin \
+    --model_with_lora ./LaMed/output/LaMed-Phi3.5-mini-finetune-0511-radgraph-memory/checkpoint-600/pytorch_model.bin \
+    --pretrain_vision_model /raid/export/wqruan/M3D/LaMed/output/CLIP-aug/model.safetensors \
+    --pretrain_mm_mlp_adapter /raid/export/wqruan/M3D/LaMed/output/LaMed-Phi-3.5-mini-instruct-pretrain-0215/checkpoint-7000/pytorch_model.bin \
+    --output_dir ./LaMed/output/LaMed-Phi3.5-mini-finetune-0511-radgraph-memory \
+    --vision_tower swin 

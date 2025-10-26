@@ -1,0 +1,1 @@
+{"bleu_mean": 0.281214105540092, "rouge_mean": 0.3063387516306642, "meteor_mean": 0.24172733554445028, "bert_mean": 0.8770274310921565, "radgraph_mean": 0.14139554181253783, "bleu_std": 0.0, "rouge_std": 0.0, "meteor_std": 0.0, "bert_std": 0.0, "radgraph_std": 0.0}

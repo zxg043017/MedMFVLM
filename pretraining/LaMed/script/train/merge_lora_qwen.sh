@@ -1,0 +1,11 @@
+python merge_lora_weights_and_save_hf_model.py \
+    --version v0 \
+    --model_name_or_path Qwen/Qwen2.5-VL-7B-Instruct \
+    --model_type qwen \
+    --lora_enable True \
+    --vision_tower swin \
+    --model_with_lora ./LaMed/output/LaMed-Qwen2.5-VL-finetune-0424/checkpoint-1600/pytorch_model.bin \
+    --pretrain_vision_model /raid/export/wqruan/M3D/LaMed/output/CoCa-Qwen2.5-VL-7B-tao/checkpoint-600/model.safetensors \
+    --pretrain_mm_mlp_adapter ./LaMed/output/LaMed-Qwen-2.5-7B-VL-instruct-pretrain-0423/checkpoint-4200/pytorch_model.bin \
+    --output_dir ./LaMed/output/LaMed-Qwen2.5-VL-finetune-0426 \
+    --vision_tower swin 

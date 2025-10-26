@@ -1,0 +1,8 @@
+torch
+monai
+tensorboardX
+nibabel
+einops
+positional-encodings
+scikit-learn
+matplotlib
