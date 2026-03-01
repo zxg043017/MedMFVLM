@@ -1,6 +1,6 @@
 # VLM Classification Project
 
-This project focuses on Vision-Language Model (VLM) based classification, particularly for medical imaging analysis related to Thyroid-Associated Orbitopathy (TAO). It uses deep learning models like Swin Transformers and foundation models to classify medical scans.
+"This repository contains the official implementation of "Modality-Aware Fine-Grained Vision-Language Pre-Training for 3D Multi-Organ Anomaly Detection." It utilizes deep learning architectures, such as Swin Transformers and foundation models, to perform anomaly detection on medical scans."
 
 ## Directory Structure
 
