@@ -24,10 +24,10 @@ VLM_classification/
 
 ### Key Files and Directories
 
-#### `main_Swin_TAO_CLS.py`
+#### `main_Swin_CLS.py`
 The main script to start the training and evaluation process for the Swin Transformer-based TAO classification model. It likely handles argument parsing, setting up the dataset, model, and trainer, and initiating the training loop.
 
-#### `trainer_TAO_CLS.py`
+#### `trainer_CLS.py`
 This file contains the core training logic. It defines the training loop, validation loop, loss calculation, optimizer steps, and performance metric logging.
 
 ---
@@ -36,7 +36,7 @@ This file contains the core training logic. It defines the training loop, valida
 This directory contains all datasets and data-related scripts.
 
 - **`dataset/mm_tao_cls/`**: Holds the specific multi-modal dataset for TAO classification.
-    - `data_split_with_csv.py`: A script to split the main `mm_tao_cls_4_label.csv` into `train.csv`, `val.csv`, and `test.csv` for training, validation, and testing.
+    - `data_split_with_csv.py`: A script to split the main `mm_cls_4_label.csv` into `train.csv`, `val.csv`, and `test.csv` for training, validation, and testing.
     - `*.csv` & `*.json`: These files contain metadata, labels, and file lists that define the different data splits (e.g., `train.csv`, `mm_tao_cls_4_label.json`).
     - `train_data/`, `val_data/`, `test_data/`: These folders contain the actual `.nii` image files (likely MRI/CT scans) and corresponding `masks` for each data split.
 
@@ -81,6 +81,6 @@ This directory holds pre-computed text embeddings.
 ### `utils/`
 A collection of helper scripts and utility functions used across the project.
 
-- `data_utils.py`, `MM_CLS_TAO_data_utils.py`, etc.: These are data loading and pre-processing pipelines. They handle loading `.nii` files, applying transformations, and preparing batches for the model. Different versions exist for different datasets or experiments (TAO, Brain, Liver).
+- `data_utils.py`, `MM_CLS_data_utils.py`, etc.: These are data loading and pre-processing pipelines. They handle loading `.nii` files, applying transformations, and preparing batches for the model. Different versions exist for different datasets or experiments (TAO, Brain, Liver).
 - `loss.py`, `Focal_Loss.py`: Implementations of various loss functions used for training the classification models.
 - `utils.py`: General utility functions, such as setting up loggers, saving checkpoints, or calculating metrics.
