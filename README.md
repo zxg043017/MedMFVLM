@@ -6,10 +6,10 @@
 
 ```
 VLM_classification/
-├── main_Swin_TAO_CLS.py
-├── trainer_TAO_CLS.py
+├── main_Swin_CLS.py
+├── trainer_CLS.py
 ├── dataset/
-│   └── mm_tao_cls/
+│   └── mm_cls/
 ├── model/
 │   └── CLS/
 ├── optimizers/
